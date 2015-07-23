@@ -1,0 +1,3 @@
+# Ignore files build by ue4
+Binaries/
+Intermediate/
