@@ -7,7 +7,7 @@
 	"CreatedBy" : "Muggle Wei",
 	"CreatedByURL" : "https://github.com/MuggleWei",
 	"EngineVersion" : "4.8.0",
-	"Description" : "Create new content browser asset and corresponding editor in ue4",
+	"Description" : "Create new content browser asset and corresponding editor's layout in ue4",
 	"Category" : "Asset",
 	"EnabledByDefault" : true,
 	
