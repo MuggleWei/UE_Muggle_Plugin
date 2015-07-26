@@ -6,7 +6,7 @@ namespace UnrealBuildTool.Rules
 		{
 			PublicIncludePaths.AddRange(
 				new string[] {
-					"CustomAssetEditor/Public"
+					"CustomAssetEditor/Public",
 					// ... add public include paths required here ...
 				}
 				);
@@ -14,6 +14,7 @@ namespace UnrealBuildTool.Rules
 			PrivateIncludePaths.AddRange(
 				new string[] {
 					"CustomAssetEditor/Private",
+					"AssetTools",
 					// ... add other private include paths required here ...
 				}
 				);
@@ -35,6 +36,8 @@ namespace UnrealBuildTool.Rules
                     "Slate",
 				    "SlateCore",
 					"CustomAsset",
+                    "AssetTools",
+                    "EditorStyle",
 					// ... add private dependencies that you statically link with here ...
 				}
 				);
