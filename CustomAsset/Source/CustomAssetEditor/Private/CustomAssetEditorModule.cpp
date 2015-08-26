@@ -25,7 +25,7 @@ void FCustomAssetEditorModule::StartupModule()
 
     CustomAssetCategoryBit = AssetTools.RegisterAdvancedAssetCategory(FName(TEXT("CustomAsset")), LOCTEXT("CustomAssetCategory", "CustomAsset"));
 
-    auto action = MakeShareable(new FCustomAssetTypeActions(CustomAssetCategoryBit));
+    TSharedRef<IAssetTypeActions> action = MakeShareable(new FCustomAssetTypeActions(CustomAssetCategoryBit));
     AssetTools.RegisterAssetTypeActions(action);
     CreatedCustomAssetTypeActions.Add(action);
 }
@@ -45,6 +45,6 @@ void FCustomAssetEditorModule::ShutdownModule()
     CreatedCustomAssetTypeActions.Empty();
 }
 
-IMPLEMENT_MODULE( FCustomAssetEditorModule, ICustomAssetEditorModule )
+IMPLEMENT_MODULE( FCustomAssetEditorModule, CustomAssetEditor )
 
 #undef LOCTEXT_NAMESPACE

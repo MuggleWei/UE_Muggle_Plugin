@@ -19,6 +19,6 @@ void FCustomAssetModule::ShutdownModule()
 	UE_LOG(LogCustomAsset, Log, TEXT("Unload Module: CustomAsset"));
 }
 
-IMPLEMENT_MODULE( FCustomAssetModule, ICustomAssetModule )
+IMPLEMENT_MODULE( FCustomAssetModule, CustomAsset )
 
 #undef LOCTEXT_NAMESPACE
